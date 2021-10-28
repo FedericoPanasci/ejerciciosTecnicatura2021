@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Formulario CSS</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body{
+            background-color: wheat;
+        }
+
+        input[name="nombre"] /* tunea los input que coincidan con la sentencia */{
+            width: 98%; /* tamaño */
+            padding: 12px 50px; /* acomoda internamente */
+            margin: 10px 10px; /* margenes */
+            border: 5px groove red; /* formato de borde, color, tamaño y tipo */
+            border-radius: 20px; /* punta redondeada */
+            background-color: black; /* color de fondo*/
+            color: yellow; /* color de la letra */
+            background-image: url('2041561783-mundoemoti-zxvlzk.gif'); /* pega la imagen */
+            background-repeat: no-repeat; /* para que no se repita la imagen */
+            background-position: 50px 0px; /* posicion de la foto*/
+        }
+
+        button {
+            background-color: #4CAF50;
+            border: none;
+            color: rgb(255, 255, 255);
+            padding: 12px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        input:focus,
+        select:focus {
+            background-color: green;
+            border: 5px groove rgb(238, 255, 0);
+        }
+        button:hover{
+            background-color: #45a049;
+
+        }
+        ::placeholder {
+            color: gray; 
+            
+        }
+
+        label {
+            padding: 12px 12px 12px 12px;
+            display: block;
+            color: black;
+            
+        }
+        select {
+            width: 68%;
+            height: 20px 20px 10px 10px;
+            color: lightblue;
+            background-color: black;
+            border: none;
+            padding: 1px 1px 0px 2px;
+            margin: 10px 10px;
+        }
+        .container /* identifica que es configuracion a la clase */{
+            border-radius: 15px;
+            background-color: #f2f2f2;
+            padding: 8px;
+            width: 500px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>FORMULARIO</h1>
+    <div class="container">
+        <form action="http://localhost:5500" method="POST"></form>
+        <label for="nombre">nombre</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Escriba su nombre" />
+        <label for="apellido">apellido</label>
+        <input type="text" name="apellido" id="apellido" placeholder="Escriba su apellido" />
+        <label for="Idioma">Idioma</label>
+        <select name="Idioma" id="Idioma">
+            <option disabled selected>Seleccione</option>
+            <option>Español</option>
+            <option>Ingles</option>
+        </select>
+        <button type="submit">Enviar</button>
+    </div>
+</body>
+
+</html>

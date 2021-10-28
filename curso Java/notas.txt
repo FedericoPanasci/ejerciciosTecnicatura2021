@@ -1,0 +1,31 @@
+--  <meta charset="UTF-8">
+la etiqueta meta con la propiedad charset indica al navegador que grupo de carácteres (letras) vamos a usar en nuestro documento, 
+en este caso usamos UTF-8, el cual es el grupo que contiene la mayoría de carácteres usados en los idiomas del hemisferio occidental de nuestro planeta
+
+--  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+La etiqueta meta con la propiedad name="viewport" le dice al navegador cómo debe controlar las dimensiones, tamaños y escalabilidad del contenido de nuestro documento
+
+--  La parte width=device-width en content le dice al navegador que debe configurar el ancho de la página al mismo ancho del dispositivo
+ en donde la estamos visualizando (el cual dependerá de cada dispositivo).
+
+--  La parte initial-scale=1.0 le dice al navegador cuál es el nivel de zoom que debe tener la página cuando se carga por primera vez.
+
+--  En <body> va todo lo de adentro del documento </body>
+
+--  <title>Document</title>
+Esta etiqueta le dice al navegador qué texto debe mostrar en la barra de título de la pestaña.
+
+INICIAR CON "html:5" carga todo lo esencial:->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
+

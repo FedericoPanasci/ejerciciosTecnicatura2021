@@ -1,0 +1,81 @@
+.navegador a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-family: 'Bangers', cursive;
+    margin: auto;
+}
+
+.navegador a:hover{
+    color: rgba(191, 173, 51, 0.7);
+    background-color: black;
+    text-shadow: 1px 1px #ffebcd;
+    margin: auto;
+    font-size: 30px;
+    padding: auto;
+}
+
+nav{
+    text-align: center;
+}
+
+.mapa{
+    border: 5px solid black;
+    border-radius: 10%;
+    margin: 0 0 0 12%;
+}
+
+.iconosRedes{
+    margin: 0 0 0 50%;
+    align-items: center;
+    text-decoration: none;
+}
+
+.instagram{
+    background: linear-gradient(orange, violet);
+    color: white !important;
+    transition-duration: 2000ms;
+    transition-property: background, color;
+}
+
+.instagram:hover{
+    color: orange;
+    background: black;
+}
+
+.facebook{
+    color: white !important;
+    background: linear-gradient(blue, white);
+    transition-duration: 2000ms;
+    transition-property: background;
+    transition-property: color;
+}
+
+.facebook:hover{
+    color: blue;
+    background: black;
+}
+.whatsapp{
+    color: black !important;
+    background-color: #00ff00;
+    transition-duration: 2000ms;
+    transition-property: color;
+    transition-property: background;
+    position: fixed;
+    right: 10px;
+    bottom: 0px;
+    border: solid;
+    border-width: 5px; 
+    border-radius: 15px 15px 0px 0px;
+}
+
+.whatsapp:hover{
+    color: black !important;
+    background: green !important;
+    transform: scale(1.1);
+}
+
+fieldset{
+    background-color: white;
+    text-align: center;
+}
