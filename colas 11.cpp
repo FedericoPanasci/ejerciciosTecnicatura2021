@@ -51,11 +51,9 @@ int remove(STR_QUEUE *queue){
     return valor;
 }
 
-STR_QUEUE create(STR_QUEUE queue){
-    STR_QUEUE queue;
-    queue.fin = NULL;
-    queue.frente = NULL;
-    return queue;
+void create(STR_QUEUE *queue){
+    queue->fin = NULL;
+    queue->frente = NULL;
 }
 
 void print(STR_QUEUE *queue){
@@ -82,7 +80,7 @@ bool remove2(STR_QUEUE *queue, int cant){
 
 int contarNodos(STR_QUEUE *queue){
     STR_QUEUE aux;
-    create(aux);
+    create(&aux);
 
     int i = 0;
     while (!isEmpty(*queue))
@@ -99,7 +97,7 @@ int contarNodos(STR_QUEUE *queue){
 
 int main () {
     STR_QUEUE queue;
-    create(queue);
+    create(&queue);
 
     add(&queue, 1);
     add(&queue, 1);
